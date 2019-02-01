@@ -1,21 +1,14 @@
-p.text-red {
-  color: #00009a;
-}
-
 body {
   font-family: "Dosis", sans-serif;
-  scroll-behavior: smooth;
 }
 body nav {
   padding-bottom: -10px;
-  background: red !important;
 }
 body nav div {
   margin-top: 0;
 }
-body nav div ul li a:hover {
-  padding-top: -10;
-  transition: 1s;
+body nav div ul li a#services:hover {
+  color: blue;
 }
 body div.container {
   padding-top: 100px;
@@ -114,37 +107,4 @@ div#tl {
   left: -13px;
 }
 
-ul.bib li {
-  padding: 5px;
-  margin-bottom: 5px;
-}
-ul.bib li.annotated {
-  border-radius: 4px;
-  background: #efefef;
-}
-ul.bib li.annotated div {
-  display: none;
-  position: fixed;
-  top: 70px;
-  left: 50%;
-  background: #efefef;
-  z-index: 100;
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-}
-ul.bib li.annotated div p {
-  color: #333;
-}
-ul.bib li.annotated:hover {
-  background: #efefef;
-  border-radius: 3px;
-  transition: 300ms;
-}
-ul.bib li.annotated:hover div {
-  display: inline;
-  transition: 1s;
-}
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.css-watch.map */

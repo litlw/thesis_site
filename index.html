@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/css/styles.css" rel="stylesheet">
 
@@ -22,7 +22,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">Hugh Ritchie</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,13 +35,17 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#intro">Intro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#examples">Examples</a>
+              <!-- currently linked to thesis -->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#timeline">Timeline</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bib">Bibliography</a>
               <!-- currently linked to thesis -->
             </li>
           </ul>
@@ -53,71 +57,450 @@
     <div class="container">
 
       <!-- Portfolio Item Heading -->
-      <h1 class="my-4">Page Heading
-        <small>Secondary Text</small>
+      <h1 class="my-4 text-muted">Data Privacy
+        <br />
+        <small>How Consumers Learn About Their Products</small>
       </h1>
-
       <!-- Portfolio Item Row -->
       <div class="row">
 
         <div class="col-md-8">
-          <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+          <img class="img-fluid" src="media/images/eye.png" alt="">
         </div>
 
         <div class="col-md-4">
-          <h3 class="my-3">Project Description</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-          <h3 class="my-3">Project Details</h3>
-          <ul>
-            <li>Lorem Ipsum</li>
-            <li>Dolor Sit Amet</li>
-            <li>Consectetur</li>
-            <li>Adipiscing Elit</li>
-          </ul>
+          <h3 class="my-3">Power in What We Buy</h3>
+          <p>
+            My thesis as it stands right now is <br />
+            <strong>
+              “how can consumers of popular
+               mobile products be enabled and encouraged to question the products they buy,
+               inform their buying habits, and eventually contribute to a consumer
+               understanding of data privacy”.
+            </strong>
+          </p>
+          <p>
+            It’s long winded, but it’s also a
+            complicated situation.
+          </p>
+
         </div>
 
       </div>
       <!-- /.row -->
-
-      <!-- Related Projects Row -->
-      <h3 class="my-4">Related Projects</h3>
-
-      <div class="row">
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-      </div>
-      <!-- /.row -->
-
     </div>
+      <!-- INTRO -->
+      <div class="container" id="intro">
+
+        <div class="row">
+          <div class="col-12">
+            <h2>Progress Thus Far</h2>
+            <p>
+              My thesis as it stands right now is “how can consumers of popular mobile products be enabled and encouraged to question the products they buy, inform their buying habits, and eventually contribute to a consumer understanding of data privacy”. It’s long winded, but it’s also a complicated situation.
+            </p>
+            <p>
+              When I started I was interested in how Machine Learning was using data – and if there was a way to express how machine learning worked to an audience of non-data focused people. When I set out on that path, I realized that most of the sources I would have used (twitter, reddit, Instagram, and some news sources) have been shut down in the recent wake of GDPR and these data leaks. As a result, most API access has either been monetized or removed. I resorted to Canadian census data – but the response I got was that my data was not interesting or relevant to my thesis.
+            </p>
+            <p>
+              I tried to pivot to Data Privacy (the cause of my frustration) and began to investigate how data was kept private. I briefly looked into data anonymization and infrastructure supporting privacy vs privilege (adversary vs researcher). I thought my thesis was going to be an art piece to depict how data anonymization worked using images, and quickly realized that my idea was too abstract (and super complicated). After investigating Data Privacy methods, I moved to Data Privacy law and comparing China to Europe. In China, Ant Financial has produced a social product called Sesame Score. Sesame Score ranks people based on their social behavior for the benefit of banks to determine credit rating. Conversely, Europe had just created several new legislations. The most popular of Europe’s legislations was GDPR, while the most impactful was Chapter 9 (Provisions relating to specific processing situations). GDPR is an overall set of “rules and regulations” about data collection, management, use, and transfer.
+            </p>
+            <p>
+              What took me towards consumers and their understanding of GDPR and Ant Financial was a couple of articles. The first was a study of various people from the EU and their a) understanding of data privacy and b) willingness to do something to protect themselves. The overall study showed that while approximately 70% cared about data privacy, less than 41% did anything about it. The other article was about European countries moving to reduce the impact and coverage of GDPR.
+            </p>
+            <p>
+              Those articles set off red flags in my head and I realized that not everyone had spent the better part of four months studying data privacy – they probably only know what they see on the web. My new focus is a response to people resisting data privacy protection in the face of oncoming Social Scoring, data profiteering, and a loss of overall freedom.
+            </p>
+            <p>
+              I definitely want to focus my thesis in more, to do more research in terms of education and how to inform people, as well as forms of educational interaction.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- DEMO -->
+
+      <div class="container" id="examples">
+        <!-- Related Projects Row -->
+        <h3 class="my-4">Previous Work</h3>
+
+        <div class="row">
+
+          <div class="col-md-4 col-sm-12 mb-4">
+            <a href="concept.html">
+              <img class="img-fluid" src="media/images/MyVideo.png" alt="Clip of my video produced to express concerns about data">
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-12 mb-4">
+            <a href="phone.html">
+              <img class="img-fluid" src="media/images/Phone.png" alt="Clip of video about the iPhone and its problematic nature">
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-12 mb-4">
+            <a href="watch.html">
+              <img class="img-fluid" src="media/images/Watch.png" alt="Clip of video about the apple watch, consumer behaviour, digital assets and their problematic nature">
+            </a>
+          </div>
+
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- DETAILS -->
+      <!-- TIMELINE -->
+      <div class="container" id="tl timeline">
+        <div class="">
+          <h2 class="my-4 text-muted">Timeline
+          </h2>
+          <hr />
+          <div id="timeline">
+            <div class="cont left">
+              <div class="content">
+                <h2>February</h2>
+                <p>
+                  Coming Soon :)
+                </p>
+              </div>
+            </div>
+            <div class="cont right">
+              <div class="content">
+                <h2>January</h2>
+                <p>I'm re-writing my thesis to determine exactly what my thesis should be about. The overall topic of the EU vs
+                China in terms of data privacy and international data markets is far too big to cover. My new goal is to downsize
+              what I want to say into an accomplishable goal. </p>
+              <p>
+                My revised thesis is beginning to look like this:
+              </p>
+              <p class="text-red">
+                Current software takes advantage of users' trust, and has made us dependent upon the features of Cyberspace.
+                How can users be encouraged to educate thesmelves about the risks they take on - so that their buying habits
+                change, eventually pushing companies towards a better spending habit.
+              </p>
+              <p>
+
+                I still have no idea how I will reconcile that.
+              </p>
+              </div>
+            </div>
+            <div class="cont left">
+              <div class="content">
+                <h2>December</h2>
+                <p>Over the winter break, I have been reviewing my research and I am excited for what will happen in the coming months. </p>
+                <p>
+                  The biggest piece of criticism was that my work was not connected to my research. That's a hard problem for me to tackle
+                  , mostly because I have a hard time summarizing this body of research.
+                </p>
+                <p>
+                  The other piece of criticism is that my creative work seems to heavily target apple products. I was definitely aware that
+                  I was targeting apple (and trust me they deserve the attention), but I guess I had overlooked that instead of telling
+                  people to be critical of their smartphones, I was just bashing Apple.
+                </p>
+                <p>
+                  My realy purpose with this thesis is to encourage people to think about the impact their smart devices have on their lives.
+                  Beside that, I also want people to think about the rights they give up when accepting these devices into their lifestyle.
+                </p>
+              </div>
+            </div>
+            <div class="cont right">
+              <div class="content">
+                <h2>November</h2>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              </div>
+            </div>
+            <div class="cont left">
+              <div class="content">
+                <h2>October</h2>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              </div>
+            </div>
+            <div class="cont right">
+              <div class="content">
+                <h2>September</h2>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="container" id="bib">
+        <!-- Related Projects Row -->
+        <h3 class="my-4">Bibliography</h3>
+
+        <div class="row">
+
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-12">
+                <ul class="bib">
+                  <li>
+                    <p>
+                      Adams, John. "Credit Sesame Brings Credit Score/Debt Management Service to Mobile Devices." <i>American Banker</i>, 22 Dec. 2011. Academic OneFile, <a href="http://link.galegroup.com.ocadu.idm.oclc.org/apps/doc/A275440951/AONE?u=toro37158&sid=AONE&xid=1979e750">http://link.galegroup.com.ocadu.idm.oclc.org/apps/doc/A275440951/AONE?u=toro37158&sid=AONE&xid=1979e750</a>. Accessed 20 Nov. 2018.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Alibaba. “Ant Financial Partner with Government to Build Jiangxi's Digital Economy." <i>China Telecom</i>, June 2018, p. 8. Academic OneFile, <a href="http://link.galegroup.com/apps/doc/A547533219/AONE?u=toro37158&sid=AONE&xid=58ff776d">http://link.galegroup.com/apps/doc/A547533219/AONE?u=toro37158&sid=AONE&xid=58ff776d</a>. Accessed 20 Nov. 2018.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Barone, Tom and Elliot W. Eisner. "What is and What is Not Arts Based Research?." <i>Arts Based Research. Thousand Oaks: SAGE Publications, Inc.</i>, 2012.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Chen, Chaochao, et al. "Distributed Collaborative Hashing and its Applications in Ant Financial.", 2018.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Choo, Kukhee. "Cool Governance: Japan's Ubiquitous Society, Surveillance, and Creative Industries." <i>Culture, Theory and Critique</i>, vol. 59, no. 2
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Dayen, David. "Big Tech: The New PREDATORY CAPITALISM." <i>The American Prospect</i>, Winter 2018.
+                    </p>
+                  </li>
+
+                  <li class="annotated">
+                    <p>
+                      Deibert, Ronald J. <i>Black Code: Surveillance, Privacy, and the Dark Side of the Internet.</i> Signal, 2013.
+                    </p>
+                    <div class="col-md-5 col-sm-12">
+                      <p>
+                        Ronald Deibert, the head of Citizen Labs in Toronto, has a long and prolific history of involvement with data privacy. He and his lab were recommended to me for research by one of my advisors, and what I have learned from them and about them has been incredible even after just a few weeks of reading.
+                      </p>
+                      <p>
+                        Deibert’s book is a story of his lab’s journeys through the discovery and undoing of China’s ghostnet, as well as other journeys. On top of that, it is a critique and opinion piece from Deibert about data privacy overall. His book thus far has helped me position my thoughts in my own thesis. My direction of “What happens to you when you are compromised” as an introductory learning piece for everyday users is definitely inspired by what happened with the ghostnet story, as well as other stories that I read about in the news.
+                      </p>
+                      <p>
+                        The basic thesis is simple. Hackers rarely hack people for their identity – they hack for access, for mechanical resource, or for widespread intelligence gathering. The difference between access and widespread intelligence gathering is the precision with which a hacker might act. For access, a hacker would target someone specifically so that they can get closer to their true target. This often happens on a personal device or on a personal network of devices or area networks. Widespread intelligence gathering, on the other hand, is for the purpose of monitoring the consensus of devices over a very large network of people. This is often less invasive and also often less damaging to its victims. These two methods, however, are not mutually exclusive and can be part of the same strategy.
+                      </p>
+                      <p>
+                        Long story short – this article gave me focus.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="annotated">
+                    <p>
+                      Fairclough, Bradyn. "Privacy piracy: the shortcomings of the United States' data privacy regime and how to fix it." <i>The Journal of Corporation Law</i>, Winter 2016, p. 461.
+                    </p>
+                    <div class="col-md-5 col-sm-12">
+                      <p>
+                        With all of these sources in mind, this article was enlightening and useful to ground many of my arguments and thoughts. The reason is many events that have taken place in the US and internationally in terms of data privacy are mentioned in this article. It also outlined a series of very concerning (and therefore good argument points) topics of US data privacy. I know this is a contentious topic and changes at any given moment, but as of 2019 these laws have not changed or been improved.
+                      </p>
+                      <p>
+                        As I write, an inquiry is going on for Facebook’s massive data breach that has pulled in google, apple, and amazon. It is likely that this massive inquiry will end with regulatory laws for these companies and these actions, but I cannot write about what has not happened yet. This article makes clear that the US has no data privacy law. Not only that, but its own constitution favors the wrongdoer in most situations – citing the second amendment.
+                      </p>
+                      <p>
+                        I think that lots of people don’t know this is the case for the US (and largely also Canada), but it definitely has an impact on whether a person would support GDPR or not. I think that if more people knew what was happening with their data, and how utterly unprotected they are, then they would act very differently.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <p>
+                      Finn, Jonathan. “Capturing the Criminal Image : From Mug Shot to Surveillance Society.” <i>University Of Minnesota Press</i>, 2009.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Fuchs, Christian. "studiVZ: Social Networking in the Surveillance Society." <i>Ethics and Information Technology</i>, vol. 12, no. 2, 2010.
+                    </p>
+                  </li>
+
+                  <li class="annotated">
+                    <p>
+                      Greenleaf, Graham. “The influence of European data privacy standards outside Europe: implications for globalization of Convention 108.” <i>International Data Privacy Law</i>, Volume 2, Issue 2, 1 May 2012.
+                    </p>
+                    <div class="col-md-5 col-sm-12">
+                      <p>
+This article served as an incredibly thorough explanation and overview of GDPR and Convention 108. It is also an excellent resource of “what’s going on internationally” as a review of data policies at a very high level from several different countries. Before my change in thesis direction, I was interested in the comparison between GDPR and the changes coming in the banking world of China with respect to private data (trust me there’s something there).
+                      </p>
+                      <p>
+                        Something that became very clear in this article is what GDPR could become. Reading through the potential impacts and responses to Convention 108 in GDPR was an inspiring moment in my research. The basic summary of Convention 108 is similar to the security that countries have installed at their borders and their airports. A complex system that checks for security risks and international threats as people enter the country. By simply changing some of the words around of that description, you have the gist of Convention 108. For instance: A complex system that checks for security risks and threats as users enter the national web space.
+                      </p>
+                      <p>
+                        There are other insights in this article, but Convention 108 is by far the most impactful and has the loudest resonance both for and against in respective communities.
+                      </p>
+
+                    </div>
+                  </li>
+
+                  <li>
+                    <p>
+                      Han, Dong. "The Market Value of Who We Are: The Flow of Personal Data and Its Regulation in China." <i>Media and Communication</i>, 5.2 (2017
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Kanopy (Firm), and The Great Courses (Firm). “How Apple Raises Competitive Barriers.” <i>The Great Courses</i>, California, USA, 2015.
+                    </p>
+                  </li>
+
+                  <li class="annotated">
+                    <p>
+                      Kurzgesagt – In a Nutshell. “Safe and Sorry – Terrorism & Mass Surveillance.” <i>Youtube</i>, Kurzgesagt, Apr 14, 2016, <a href="https://www.youtube.com/watch?v=V9_PjdU3Mpo">https://www.youtube.com/watch?v=V9_PjdU3Mpo</a>.
+                    </p>
+                    <div class="col-md-5 col-sm-12">
+                      <p>
+                        I often turn to Kurzgesagt for background knowledge on a subject. They often focus on very high level concepts of something that’s going on – and they hit privacy and security right on the head. The overall thesis of this video is that there is a balance to be struck between protecting ourselves and restricting ourselves from the freedoms that we should be entitled to. My thesis does not necessarily deal with terrorism or the impact of overprotective legislation, but these topics definitely inform some of the background of my research.
+                      </p>
+                      <p>
+
+                        Data privacy laws will be very similar to national privacy laws, except that these legislations have the portential to impact our day to day lives in our pockets and at homes. Not only that, but the privacy laws that could come into place (or the agreements between software companies and governments) could lead to us being compromised more ore being watched with greater ease.
+                      </p>
+                      <p>
+                        In my opinion, being watched as a core concept doesn’t bother me. What does bother me is who is watching me and why are they watching. Those two questions can be the difference between better healthcare and a new international battlegrounds for insurgence and data gathering.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="annotated">
+                    <p>
+                      LastWeekTonight. “Facebook: Last Week Tonight with John Oliver (HBO).” <i>Youtube</i>, LastWeekTonight, Sep 23, 2018, <a href="https://www.youtube.com/watch?v=OjPYmEZxACM">https://www.youtube.com/watch?v=OjPYmEZxACM</a>.
+                    </p>
+                    <div class="col-md-5 col-sm-12">
+                      <p>
+                        It can often be hard to keep up with the news and to keep up with the ever-growing collection of events that are leading both Canada and the US into different paths with respect to data privacy. This video is a helpful re-cap of what has happened thus far with American policy making and data privacy. It also makes special note of machine learning and third party data analysis. These are practices that are very common for those in the world of data analytics – but those capabilities turned at people can be horrifying to think of.
+                      </p>
+                      <p>
+                        The reason why those concepts are so frightening is explained in this video. Basically, if these companies were successful in guiding a population to vote a huge orange infant into the seat of President of the United States, then they surely have control over some decisions that voters are making. With access to that kind of influential media and access to machine learning, simply the interactions of people can model a government-leading data structure. Such a science fiction manifestation could be a very scary future to live in.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <p>
+                      Laybats, Claire, and John Davies. "GDPR." <i>Business Information Review</i>, vol. 35, no. 2, 2018.
+                    </p>
+                  </li>
+
+                  <li class="annotated">
+                    <p>
+
+                      <i>Lo and Behold, Reveries of the Connected World</i>. Directed by Werner Herzog, Produced by Werner Herzog and Rupert Maconick, Magnolia Pictures, Publication date. January 23, 2016.
+                    </p>
+                    <div class="col-md-5 col-sm-12">
+                      <p>
+                        placeholder
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <p>
+                      Lynch, Clifford, ‘How do your data grow?’, <i>Nature Publishing Group</i>, Volume 455, September 2008.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Mehmood, Abid, I. Natgunanathan, Y. Xiang, G. Hua and S. Guo, "Protection of Big Data Privacy," in <i>IEEE Access</i>, vol. 4, 2016.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Oecd.org. (2018). About the OECD - OECD. <a href="http://www.oecd.org/about/">http://www.oecd.org/about/</a>, Accessed 13 Nov. 2018.
+                    </p>
+                  </li>
+
+                  <li>
+                    Ong, Rebecca, “Recognition of the right to privacy on the Internet in China”, <i>International Data Privacy Law</i>, Volume 1, Issue 3, 1 August 2011.
+                  </li>
+
+                  <li>
+                    <p>
+                      Rowley, Paul. "Navigating Brexit and GDPR." ITNow, vol. 58, no. 4, 12/01/2016.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Robinson, Sandra. "Databases and Doppelgängers: New Articulations of Power." <i>Configurations</i>, vol. 26 no. 4, 2018, pp. 411-440. Project MUSE.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Rutherford, Paul. “The New Icons?: The Art of Television Advertising.” <i>University of Toronto Press</i>, 1994;1995;2000.
+                    </p>
+                  </li>
+
+                  <li class="annotated">
+                    <p>
+                      Sobolewski, Maciej, et al. "GDPR: A Step Towards a User-Centric Internet?" <i>Inter Economics</i>, vol. 52, no. 4, 07/01/2017.
+                    </p>
+                    <div class="col-md-5 col-sm-12">
+                      <p>
+                        Leading up to this article, I had generated a serious amount of interest in users’ perspective of data privacy. I already had done loads of research about GDPR, ANT financial, and various other players on the international stage. The overall story was already becoming clear to me – which is naïve but that’s how it felt. This article, however, opened it up when it presented the stats about the users in Europe and their perspective on Data Privacy and GDPR.
+                      </p>
+                      <p>
+                        The basic thesis of this article was; Is the EU, and potentially also the world, moving towards a user centric internet with freedoms and protections similar to those of national legislation by way of digital regulation? The arguments stem from adoption of GDPR and perception of GDPR. One of those arguments really sticks to the core of my thesis – do people support GDPR?
+                      </p>
+                      <p>
+                        It is made clear through field research that people do not really know what’s going on with data privacy – but they do care about data privacy. What was also clear was that the exchange of goods or services for a person’s data was a very uneven scale. The average user is / was giving away their precious identifiable data in exchange for nearly insignificant conveniences on their mobile devices.
+                      </p>
+                    </div>
+                  </li>
+
+
+
+
+
+                  <li class="annotated">
+                    <p>
+                      The New York Times. “How Cambridge Analytica Exploited the Facebook Data of Millions | NYT.” <i>Youtube</i>, The New York Times, April 9, 2018, <a href="https://www.youtube.com/watch?v=mrnXv-g4yKU">https://www.youtube.com/watch?v=mrnXv-g4yKU</a>.
+                    </p>
+                    <div class="col-md-5 col-sm-12">
+                      <p>
+                        In an effort to keep up with the current times, I often turn to New York Times and Globe and Mail for resources. This video in particular covers the events that took place over an agreement between Cambridge Analytica and Facebook. This event, which is still shaking the world with respect to data privacy, is exactly what I want to combat. The entire documentation that New York Times provides – while 100% accurate – is indicitave of what people think is the real end point of data privacy being compromised. There is some discussion in the other academic work of the adversary and the researcher as two ethical poles of people who need data.
+                      </p>
+                      <p>
+                        This article discusses neither of them in depth, and simply says “oops we spilled your data”. Cambridge analytica poses itself to be a researcher – benign and in the interest of overall social growth – while in reality we have no idea whom else might have wanted to purchase data from that company – by way of the university research lab.
+                      </p>
+                      <p>
+                        I want to dissuade people from thinking a facebook data leak is the real risk. It is not. The real risk is what people might do to accomplish their nefarious goals – and what they might use you for in the process.  
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <p>
+                      Wimmer, Kurt. "The Long Arm of the European Privacy Regulator: Does the New EU GDPR Reach U.S. Media Companies?" <i>Communications Lawyer</i>, Summer 2017.
+                    </p>
+                  </li>
+                  <li>
+                    Xu, Lei; C. Jiang, J. Wang, J. Yuan and Y. Ren, "Information Security in Big Data: Privacy and Data Mining," in <i>IEEE Access</i>, vol. 2, pp. 1149-1176, 2014.
+                  </li>
+
+
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+
+
+
+
     <!-- /.container -->
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Hugh Ritchie 2019</p>
       </div>
       <!-- /.container -->
     </footer>

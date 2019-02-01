@@ -1,6 +1,183 @@
 // this is the stylesheet for my document OOOOH
-body{
+$font: 'Dosis', sans-serif;
+$tl:(
+  bg: #DADFE4,
+  bg_hover: #F3F4F6,
+  dot_line: #47627D,
+  tline: linear-gradient(#F8F8F8, #55687E),
+  c_bg: linear-gradient(#F8F8F8, #ffffff)
+);
+
+p.text-red{
+  color: #00009a;
+}
+
+body {
+  font-family: $font;
+  // background-image: url("../../media/images/bg1.png");
+
+  scroll-behavior: smooth;
+
+  nav {
+    padding-bottom: -10px;
+    background: red !important;
+
+    div {
+      margin-top: 0;
+
+      ul {
+        li {
+          a:hover {
+            padding-top: -10;
+            transition: 1s;
+          }
+        }
+      }
+    }
+  }
+
+  div.container {
+    padding-top: 100px;
+  }
   div.container{
-    margin-top: 20px;
+    div{
+      hr{
+        margin-bottom: 0px;
+      }
+      div#timeline{
+        background-image:map-get($tl, c_bg);
+      }
+    }
+  }
+}
+div#tl{
+  padding-bottom: 110px;
+}
+#timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-image: map-get($tl, tline);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  .cont {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    margin-bottom: -100px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: white;
+      border: 4px solid #47627D;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .content {
+      padding: 20px 30px;
+      background-color: map-get($tl, bg);
+      position: relative;
+      border-radius: 6px;
+      border: 2px solid map-get($tl, bg);
+      transition: 0.5s;
+      &:hover{
+        background-color: map-get($tl, bg_hover);
+        transition: 0.5s;
+        }
+      }
+    }
+
+
+  .left {
+    left: 0;
+
+    &:before{
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      right: 30px;
+      border: medium solid white;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent map-get($tl, bg);
+
+    }
+    &:after{
+      // nothing yet.
+      right: -13px;
+    }
+  }
+
+  .right {
+    left: 50%;
+
+    &:before{
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent map-get($tl, bg) transparent transparent;
+    }
+    &:after{
+      left: -13px;
+    }
+  }
+}
+
+ul.bib{
+  li{
+    padding: 5px;
+    margin-bottom: 5px;
+    p{
+    }
+  }
+  li.annotated{
+    border-radius: 4px;
+    background: #efefef;
+    div{
+      display: none;
+      position: fixed;
+      top: 70px;
+      left: 50%;
+      background: #efefef;
+      z-index: 100;
+      -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+      -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+      box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+      border-radius: 5px;
+      p{
+        color: #333;
+      }
+    }
+    &:hover{
+      background: #efefef;
+      border-radius: 3px;
+      transition: 300ms;
+      div{
+        display: inline;
+        transition: 1s;
+      }
+    }
   }
 }
